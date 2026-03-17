@@ -2,5 +2,8 @@ bin/
 obj/
 *.user
 .vs/
+# Exclude build output nupkgs, but allow packages/ folder
 *.nupkg
 *.snupkg
+!packages/*.nupkg
+!packages/*.snupkg
