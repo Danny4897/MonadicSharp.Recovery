@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>MonadicSharp.Recovery</RootNamespace>
+    <LangVersion>12</LangVersion>
+
+    <PackageId>MonadicSharp.Recovery</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Danny4897</Authors>
+    <Description>Amber-track (self-healing) extension for MonadicSharp. Adds RescueAsync and StartFixBranchAsync to intercept specific failures, attempt recovery, and merge back to the success track — without breaking the Result pipeline. Inspired by GitHub's fix-branch model applied to Railway-Oriented Programming.</Description>
+    <PackageTags>railway-oriented-programming;result;functional;error-handling;recovery;self-healing;retry;resilience;monadic</PackageTags>
+    <PackageProjectUrl>https://github.com/Danny4897/MonadicSharp.Recovery</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/Danny4897/MonadicSharp.Recovery</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <PackageReleaseNotes>v1.0.0: Initial release — RescueAsync (single recovery attempt), StartFixBranchAsync (N-attempt fix branch with backoff), ErrorPredicates (composable error filters), IRecoveryTelemetry (observability interface).</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MonadicSharp" Version="1.4.0" />
+  </ItemGroup>
+
+</Project>
