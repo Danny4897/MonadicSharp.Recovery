@@ -5,6 +5,7 @@ export default defineConfig({
   description: 'Self-healing extension for MonadicSharp — RescueAsync and StartFixBranchAsync for Railway-Oriented error recovery.',
   base: '/MonadicSharp.Recovery/',
   cleanUrls: true,
+  ignoreDeadLinks: true,
 
   head: [
     ['meta', { property: 'og:type', content: 'website' }],
