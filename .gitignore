@@ -7,3 +7,5 @@ obj/
 *.snupkg
 !packages/*.nupkg
 !packages/*.snupkg
+docs/node_modules/
+docs/.vitepress/dist/
