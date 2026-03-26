@@ -1,5 +1,8 @@
 # Getting Started
 
+[![NuGet](https://img.shields.io/nuget/v/MonadicSharp.Recovery.svg?style=flat-square)](https://www.nuget.org/packages/MonadicSharp.Recovery/) [![NuGet Downloads](https://img.shields.io/nuget/dt/MonadicSharp.Recovery.svg?style=flat-square)](https://www.nuget.org/packages/MonadicSharp.Recovery/)
+
+
 MonadicSharp.Recovery adds two recovery operators to [MonadicSharp](https://danny4897.github.io/MonadicSharp/) pipelines — `RescueAsync` for single-attempt recovery and `StartFixBranchAsync` for multi-attempt recovery.
 
 ## Install
